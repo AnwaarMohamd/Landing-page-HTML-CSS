@@ -1,0 +1,536 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    background-color: #458FF6;
+    color: white;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7D7987;
+    font-size: 18px;
+}
+
+.nav-links a.active {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* Spotlight Section */
+.spotlight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 140px 60px 60px;
+    background-repeat: no-repeat;
+}
+
+.spotlight-text {
+    max-width: 445px;
+
+}
+
+.spotlight-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.spotlight::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    /* تحت navbar */
+    left: 0;
+    width: 200px;
+    /* حجم الصورة */
+    height: 200px;
+    background-image: url("images/left_element.png");
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.spotlight-text p {
+    font-size: 21px;
+    font-weight: 300;
+    color: #7D7987;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.spotlight-text button {
+    background-color: #458FF6;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 55px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services .subtitle {
+    font-size: 14px;
+    color: #7a7a7a;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+
+/* Srevice Section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+      z-index: 1;
+
+}
+
+.card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    /* شوية برا على الشمال */
+    width: 600px;
+    /* حجم الصورة */
+    height: 600px;
+    background-image: url("images/Frame.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.learn-more-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.learn-more-btn {
+  background-color: #fff;
+  color: #458ff6;
+  border: 2px solid #458ff6;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #458ff6;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(69, 143, 246, 0.3);
+}
+
+/* Providers Section */
+.providers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 140px 40px 50px;
+    background-repeat: no-repeat;
+      position: relative;
+
+}
+
+.providers-text {
+    max-width: 445px;
+
+}
+
+.providers-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.providers::after {
+  content: "";
+  position: absolute;
+  right: -5px;     /* أقصى اليمين */
+  bottom: -80px;    /* تحت السكشن */
+  width: 200px;
+  height: 200px;
+  background-image: url("images/left_element.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.providers-text p {
+    font-size: 21px;
+    font-weight: 300;
+    color: #7D7987;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+
+.Download{
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.Download h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.Download .subtitle {
+    font-size: 14px;
+    color: #7a7a7a;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.Download {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 140px 40px 50px;
+    background-repeat: no-repeat;
+      position: relative;
+
+}
+
+.Download-text {
+    max-width: 445px;
+
+}
+
+.Download-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.Download-text p {
+    font-size: 21px;
+    font-weight: 300;
+    color: #7D7987;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.customer-review{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.customer-card{
+     width: 80%;
+  padding: 60px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #67C3F3, #5A98F2);
+  color: white;
+}
+
+.customer-card h2{
+  text-align: center;
+  font-size: 32px;
+}
+
+.underline {
+  width: 60px;
+  height: 2px;
+  background: white;
+  margin: 15px auto 50px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 250px;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.profile h4 {
+  margin: 0;
+}
+
+.profile span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.review {
+  line-height: 1.8;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.articles {
+  position: relative;
+  padding: 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.articles h2 {
+  font-size: 32px;
+}
+
+.underline {
+  width: 50px;
+  height: 2px;
+  background: black;
+  margin: 15px auto 50px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  text-align: left;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h4 {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.card p {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.card a {
+  display: block;
+  padding: 20px;
+  color: #458FF6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.view-all {
+  margin-top: 50px;
+  padding: 12px 40px;
+  border-radius: 25px;
+  border: 1px solid #458FF6;
+  background: transparent;
+  color: #458FF6;
+  cursor: pointer;
+}
+
+.articles::after {
+  content: "";
+  position: absolute;
+  right: -150px;
+  top: 150px;
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(180deg, #E8F3FF, transparent);
+  border-radius: 50%;
+}
+
+.articles::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 200px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(#97C3F9 2px, transparent 2px);
+  background-size: 12px 12px;
+}
+
+.footer {
+  position: relative;
+  background: linear-gradient(135deg, #67C3F3, #5A98F2);
+  color: white;
+  padding: 80px 100px;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  gap: 80px;
+}
+
+/* البراند */
+.footer-brand {
+  max-width: 350px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  background: white;
+  color: #5A98F2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.footer-brand p {
+  margin: 25px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-brand small {
+  opacity: 0.8;
+}
+
+/* اللينكات */
+.footer-links h4 {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+/* dots يمين */
+.footer::after {
+  content: "";
+  position: absolute;
+  right: 80px;
+  top: 60px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(#ffffff80 2px, transparent 2px);
+  background-size: 12px 12px;
+}
+
+/* dots شمال */
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: 40px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(#ffffff80 2px, transparent 2px);
+  background-size: 12px 12px;
+}
